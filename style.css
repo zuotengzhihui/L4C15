@@ -1,0 +1,133 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+header, nav, h2, .main, footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: darkgreen;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+header .heading a {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #38b48b;
+}
+
+.heading {
+  padding-top: 10px;
+}
+
+.nav-list {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.nav-list-item {
+  margin: 0 20px;
+  display: inline-block;
+}
+
+main {
+  padding: 10px 40px 40px 40px;
+  background-color: #ecfcdf;
+}
+
+.name-heading {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#introduction {
+  display: flex;
+}
+
+.image-item {
+  width: 30%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.self-image {
+  width: 100%;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.intro-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 70%;
+  padding: 0 10px;
+}
+
+.intro-info {
+  line-height: 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-label {
+  width: 100px;
+  font-weight: bold;
+}
+
+.intro-text {
+  display: inline-block;
+}
+
+.social {
+  margin: 0 20px 20px 0;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: darkgreen;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
+
+.footer-text {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .image-item {
+    display: block;
+    width: 100%;
+  }
+
+  .intro-box {
+    display: block;
+    width: 100%;
+  }
+
+}
