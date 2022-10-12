@@ -1,4 +1,4 @@
-/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+
 * {
   margin: 0;
   padding: 0;
@@ -52,18 +52,17 @@ main {
   padding-bottom: 10px;
 }
 
-#introduction {
-  display: flex;
-}
-
-.image-item {
-  width: 30%;
-  margin-right: 10px;
+.intro-box {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.introduction-img-area {
+  width: 30%;
+  margin-right: 10px;
 }
 
 .self-image {
@@ -72,30 +71,22 @@ main {
   background-size: cover;
 }
 
-.intro-box {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+.introduction-area {
   background-color: #fff;
   border-radius: 10px;
   width: 70%;
   padding: 0 10px;
 }
 
-.intro-info {
-  line-height: 40px;
-}
-
 .row {
+  line-height: 40px;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .intro-label {
   width: 100px;
   font-weight: bold;
+
 }
 
 .intro-text {
@@ -104,6 +95,11 @@ main {
 
 .social {
   margin: 0 20px 20px 0;
+  margin-left: 90px;
+}
+
+.fab {
+  padding: 0 10px;
 }
 
 footer {
@@ -120,13 +116,17 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .image-item {
-    display: block;
-    width: 100%;
-  }
 
   .intro-box {
     display: block;
+  }
+
+  .introduction-img-area {
+    width: 100%;
+  }
+
+  .introduction-area {
+
     width: 100%;
   }
 
